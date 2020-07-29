@@ -1,0 +1,299 @@
+<?php
+
+
+?>
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Resume Buuilder</title>
+        
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+        
+    </head>
+    <body>
+       <div class="jumbotron text-center">
+           <h1>Resume Builder</h1>
+       </div>
+   <div class="container">
+           
+             <div class="alert alert-info alert-dismissible">
+    <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+    <strong>NOTE:</strong> This site does not record your personal info for future use.
+  </div>
+           
+           
+            <form action="showCv.php" method="post" target="_blank" id="4">
+               <table class="table group-form ">
+                                   
+                <tr>
+                <td colspan="4" style="border-top: 0"><h4><b>Personal Info</b></h4></td>
+                </tr>
+                
+                <tr>
+                <td>
+                <label for="fname">First Name</label>
+                </td>
+                <td>
+                <input type="text" id="lname" name="fname">
+                </td>
+                                <td>
+                <label for="lname">Last Name</label>
+                </td>
+                <td>
+                <input type="text" id="lname" name="lname">
+                </td>
+                </tr>
+                
+                <tr>
+                <td>
+                <label for="nic">CNIC</label>
+                </td>
+                <td>
+                <input type="text" id="cnic" name="cnic">
+                </td>
+                <td>
+                <label for="birthday">DOB</label>
+                </td>
+                <td>
+                <input type="date" id="birthday" name="birthday">
+                </td>
+                </tr>             
+                
+                <tr>
+                <td>
+                <label for="fname">Gender</label>
+                </td>
+                <td>
+                  <input type="radio" id="male" name="gender" value="Male">
+                      <label for="Male">Male</label>
+                  <input type="radio" id="female" name="gender" value="Female">
+                      <label for="Female">Female</label>
+                </td>
+                <td>
+                <label for="contact">Contact No.</label>
+                </td>
+                <td>
+                <input type="text" id="number" name="number" placeholder="+92 336 1234567">
+                </td>
+                </tr>
+                
+                <tr>
+                <td>
+                <label for="pnumber">Passport No.</label>
+                </td>
+                <td>
+                <input type="text" id="pnumber" name="pnumber">
+                </td>
+                <td>
+                <label for="email">Email</label>
+                </td>
+                <td>
+                <input type="text" id="mail" name="mail" placeholder="yourname@abc.com">
+                </td>
+                </tr>
+                               
+        
+                                                              
+                <tr>
+                <td>
+                <label for="languages">Languages</label>
+                </td>
+                <td>
+                <input type="text" id="language" name="language">
+                </td>
+                <td>
+                <label for="level">Level</label>
+                </td>
+                <td>
+                  <select name="langlevel" id="langlevel">
+                   <option selected="selected">Select your Level</option>
+                    <option value="Beginner">Beginner</option>
+                    <option value="Intermediate">Intermediate</option>
+                    <option value="Fluent">Fluent</option>
+                    <option value="Native">Native</option>
+                  </select>
+                </td>
+                </tr>
+                
+                <tr>
+               <td>
+                <label for="languages1">Languages</label>
+                </td>
+                <td>
+                <input type="text" id="language2" name="language2">
+                </td>
+                <td>
+                <label for="level1">Level</label>
+                </td>
+                <td>
+                  <select name="langlevel2" id="langlevel2">
+                   <option selected="selected">Select your Level</option>
+                    <option value="Beginner">Beginner</option>
+                    <option value="Intermediate">Intermediate</option>
+                    <option value="Fluent">Fluent</option>
+                    <option value="Native">Native</option>
+                  </select>
+                </td>
+                </tr> 
+     
+                
+                <tr>
+                <td>
+                <label for="address">Address</label>
+                </td>
+                <td colspan="3">
+                <textarea id="address" name="address" rows="1" cols="80">
+                </textarea>
+                </td>
+                           
+                
+                <tr>
+                <td>
+                <label for="info">About You</label>
+                </td>
+                <td colspan="3">
+                <textarea id="info" name="info" rows="3" cols="80" style="resize: both; overflow: auto;">
+                </textarea>
+                </td>
+
+                </tr><br>
+        
+                                   
+                <tr>
+                <td colspan="5" style="border-top: 0"><h4><br><b>Academics</b></h4></td>
+                </tr>
+                <tr style="text-align: center">
+             
+                    <td>
+                        <h5>Degree Title</h5>
+                    </td>
+                    
+                    <td>
+                        <h5>Institue Name</h5>
+                    </td>
+                    <td>
+                        <h5>Grade/CGPA</h5>
+                    </td>
+                    <td>
+                        <h5>From</h5>
+                    </td>
+                    <td>
+                       <h5>To</h5>
+                    </td>
+                   </tr>
+                   
+                <tr>
+                <td>
+                <label for="degree">Bechelors</label>
+                </td>
+                <td>
+                <input type="text" id="insname" name="insname">
+                </td>
+                <td>
+                <input type="text" id="grade" name="grade">
+                </td>
+                <td>
+                <input type="date" id="begin" name="begin">
+                </td>
+                <td>
+                <input type="date" id="end" name="end">
+                </td>
+                </tr>
+                
+                <tr>
+                <td>
+                <label for="fname">Intermediate / A Levels</label>
+                </td>
+                <td>
+                <input type="text" id="insname1" name="insname1">
+                </td>
+                <td>
+                <input type="text" id="grade1" name="grade1">
+                </td>
+                <td>
+                <input type="date" id="begin1" name="begin1">
+                </td>
+                <td>
+                <input type="date" id="end1" name="end1">
+                </td>
+                </tr>
+                
+                <tr>
+                <td>
+                <label for="fname">Matriculation / O Levels</label>
+                </td>
+                <td>
+                <input type="text" id="insname2" name="insname2">
+                </td>
+                <td>
+                <input type="text" id="grade2" name="grade2">
+                </td>
+                <td>
+                <input type="date" id="begin2" name="begin2">
+                </td>
+                <td>
+                <input type="date" id="end2" name="end2">
+                </td>
+                </tr> <br>
+                
+                
+                <tr>
+                <td colspan="5" style="border-top: 0"><h4><br><b>Experience</b></h4></td>
+                </tr>
+                
+                  <tr style="text-align: center">
+                    <td>
+                        <h5>Company Name</h5>
+                    </td>
+                    
+                    <td>
+                        <h5>Position</h5>
+                    </td>
+                    <td>
+                        <h5>From</h5>
+                    </td>
+                    <td>
+                       <h5>To</h5>
+                    </td>
+                    <td>
+                        <h5>Job Details</h5>
+                    </td>
+                   </tr>
+                          
+                <tr>
+                <td>
+                <input type="text" id="compname" name="compname">
+                </td>
+                <td>
+                <input type="text" id="position" name="position">
+                </td>
+                <td>
+                <input type="date" id="jobstart" name="jobstart">
+                </td>
+                <td>
+                <input type="date" id="jobend" name="jobend">
+                </td>
+                <td>
+                <textarea id="jobdetails" name="jobdetails" rows="1" cols="80" style=" width: 200px; resize: both; overflow: auto;" >
+                </textarea>
+                </td>
+                </tr> <br>
+                      
+                
+                                     
+                <tr>
+                <td colspan="4">
+                    <input class="btn btn-primary btn-block" type="submit" value="Submit">
+                </td>
+                </tr>
+                
+                
+            </table>
+            </form>
+        </div>
+    </body>
+</html>
